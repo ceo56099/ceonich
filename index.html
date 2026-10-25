@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PT Nyawit Bareng - CEO & Founder</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#090909}
+.page{
+ position:relative;min-height:760px;overflow:hidden;
+ background:
+  linear-gradient(135deg,transparent 40%,rgba(0,0,0,.035) 40.2%,transparent 40.6%),
+  repeating-linear-gradient(45deg,#fff 0,#fff 16px,#fafafa 17px,#fff 19px);
+}
+.purple-corner{
+ position:absolute;right:-110px;top:-170px;width:350px;height:500px;
+ background:linear-gradient(135deg,#8e00ed,#d29bff);
+ transform:rotate(-38deg);z-index:0;
+}
+.brand{
+ position:absolute;left:5%;top:35px;z-index:5;
+ display:flex;align-items:center;gap:12px;font-size:21px;font-weight:900;
+}
+.brand-mark{font-size:58px;line-height:.8;color:#8500d9}
+.photo{
+ position:absolute;object-fit:cover;filter:grayscale(100%);
+ background:#e5e5e5;
+}
+.ceo-photo{
+ top:-15px;left:34%;width:40%;height:390px;
+ clip-path:polygon(40% 0,100% 0,100% 65%,51% 100%,0 40%);
+}
+.director-photo{
+ top:365px;left:48%;width:43%;height:350px;
+ clip-path:polygon(50% 0,100% 76%,54% 100%,0 60%);
+}
+.ribbon{
+ position:absolute;z-index:3;color:#fff;font-weight:bold;
+ font-size:25px;text-align:center;padding:14px 35px;
+ background:linear-gradient(100deg,#c05aff,#8300df);
+ transform:skew(-9deg);
+}
+.ceo-ribbon{top:235px;left:17%}
+.director-ribbon{top:525px;right:5%}
+.person-name{
+ position:absolute;z-index:4;font-size:20px;font-weight:bold;
+ background:rgba(255,255,255,.92);padding:5px 12px;
+}
+.ceo-name{top:290px;left:22%}
+.director-name{top:485px;right:17%}
+.headline{
+ position:absolute;z-index:3;left:5%;top:460px;width:43%;
+}
+.headline h1{
+ font-size:clamp(36px,4.2vw,61px);line-height:1.22;
+ margin:0 0 22px;font-weight:900;letter-spacing:-1.5px;
+}
+.headline p{font-size:19px;line-height:1.6;color:#444;margin:0}
+.caption{
+ position:absolute;left:5%;bottom:30px;color:#999;font-size:16px;
+}
+.page-number{position:absolute;right:5%;bottom:25px;font-size:32px;font-weight:bold}
+@media(max-width:600px){
+ .page{min-height:850px}
+ .brand{top:25px;left:6%;font-size:16px}
+ .brand-mark{font-size:45px}
+ .purple-corner{width:180px;height:300px;right:-80px;top:-100px}
+ .ceo-photo{top:65px;left:33%;width:65%;height:260px}
+ .ceo-ribbon{top:220px;left:6%;font-size:19px;padding:12px 25px}
+ .ceo-name{top:267px;left:9%;font-size:16px}
+ .headline{top:360px;left:6%;width:87%}
+ .headline h1{font-size:37px;line-height:1.15}
+ .headline p{font-size:15px;max-width:330px}
+ .director-photo{top:575px;left:32%;width:64%;height:235px}
+ .director-name{top:595px;right:12%;font-size:16px}
+ .director-ribbon{top:700px;right:4%;font-size:17px;padding:11px 20px}
+ .caption{font-size:11px;bottom:10px;left:6%}
+ .page-number{font-size:23px;bottom:7px;right:5%}
+}
+</style>
+</head>
+<body>
+<main class="page">
+ <div class="purple-corner"></div>
+
+ <div class="brand">
+  <span class="brand-mark">P</span>
+  <span>PT NYAWIT<br>BARENG</span>
+ </div>
+
+ <img class="photo ceo-photo" src="ceo.jpg" alt="CEO PT Nyawit Bareng">
+
+ <div class="ribbon ceo-ribbon">CEO</div>
+ <div class="person-name ceo-name">Nama CEO</div>
+
+ <section class="headline">
+  <h1>Meet Our CEO<br>and Founder</h1>
+  <p>
+   Mengenal pemimpin PT Nyawit Bareng,
+   visi perusahaan, dan komitmen untuk
+   membangun masa depan bersama.
+  </p>
+ </section>
+
+ <img class="photo director-photo" src="direktur.jpg" alt="Direktur PT Nyawit Bareng">
+ <div class="person-name director-name">Nama</div>
+ <div class="ribbon director-ribbon">Director</div>
+
+ <div class="caption">PT Nyawit Bareng · Company Profile</div>
+ <div class="page-number">01</div>
+</main>
+</body>
+</html>
