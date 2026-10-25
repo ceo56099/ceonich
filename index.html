@@ -111,6 +111,74 @@ body{
   .name-director{top:680px;right:22%}
   .footer{font-size:13px}
 }
+
+/* Bagian tentang perusahaan */
+.about-company {
+  padding: 55px 7%;
+  background: #f8f5fc;
+  color: #17131d;
+}
+
+.about-company h2 {
+  text-align: center;
+  font-size: 32px;
+  margin: 0 0 15px;
+  color: #7900df;
+}
+
+.about-company .about-intro {
+  max-width: 750px;
+  margin: 0 auto 35px;
+  text-align: center;
+  line-height: 1.8;
+  color: #555;
+}
+
+.company-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.company-card {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  border-top: 5px solid #8700df;
+  box-shadow: 0 5px 20px #32104d12;
+}
+
+.company-card h3 {
+  color: #7900df;
+  margin-top: 0;
+}
+
+.company-card p,
+.company-card li {
+  line-height: 1.8;
+  color: #555;
+}
+
+.company-card ul {
+  padding-left: 20px;
+}
+
+@media (max-width: 650px) {
+  .company-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .about-company {
+    padding: 40px 6%;
+  }
+
+  .about-company h2 {
+    font-size: 27px;
+  }
+}
+  
 </style>
 </head>
 <body>
