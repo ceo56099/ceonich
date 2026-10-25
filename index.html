@@ -3,116 +3,149 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PT Nyawit Bareng - CEO & Founder</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PT Nyawit Bareng | Leadership</title>
 <style>
 *{box-sizing:border-box}
-body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#090909}
-.page{
- position:relative;min-height:760px;overflow:hidden;
- background:
-  linear-gradient(135deg,transparent 40%,rgba(0,0,0,.035) 40.2%,transparent 40.6%),
-  repeating-linear-gradient(45deg,#fff 0,#fff 16px,#fafafa 17px,#fff 19px);
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  color:#17131d;
+  background:#fff;
 }
-.purple-corner{
- position:absolute;right:-110px;top:-170px;width:350px;height:500px;
- background:linear-gradient(135deg,#8e00ed,#d29bff);
- transform:rotate(-38deg);z-index:0;
+.hero{
+  position:relative;
+  min-height:720px;
+  overflow:hidden;
+  padding:45px 5%;
 }
-.brand{
- position:absolute;left:5%;top:35px;z-index:5;
- display:flex;align-items:center;gap:12px;font-size:21px;font-weight:900;
+.purple-shape{
+  position:absolute;
+  top:-100px;
+  right:-110px;
+  width:300px;
+  height:520px;
+  background:linear-gradient(135deg,#b85bff,#7600d9);
+  transform:rotate(-38deg);
 }
-.brand-mark{font-size:58px;line-height:.8;color:#8500d9}
-.photo{
- position:absolute;object-fit:cover;filter:grayscale(100%);
- background:#e5e5e5;
+.logo{
+  position:relative;
+  z-index:2;
+  font-size:21px;
+  font-weight:900;
+  line-height:1.2;
 }
-.ceo-photo{
- top:-15px;left:34%;width:40%;height:390px;
- clip-path:polygon(40% 0,100% 0,100% 65%,51% 100%,0 40%);
+.logo span{color:#8700df}
+.intro{
+  position:relative;
+  z-index:2;
+  margin-top:330px;
+  max-width:490px;
 }
-.director-photo{
- top:365px;left:48%;width:43%;height:350px;
- clip-path:polygon(50% 0,100% 76%,54% 100%,0 60%);
+.intro h1{
+  font-size:clamp(35px,5vw,60px);
+  line-height:1.08;
+  margin:0 0 20px;
 }
-.ribbon{
- position:absolute;z-index:3;color:#fff;font-weight:bold;
- font-size:25px;text-align:center;padding:14px 35px;
- background:linear-gradient(100deg,#c05aff,#8300df);
- transform:skew(-9deg);
+.intro p{
+  font-size:18px;
+  line-height:1.7;
+  color:#555;
 }
-.ceo-ribbon{top:235px;left:17%}
-.director-ribbon{top:525px;right:5%}
-.person-name{
- position:absolute;z-index:4;font-size:20px;font-weight:bold;
- background:rgba(255,255,255,.92);padding:5px 12px;
+.person{
+  position:absolute;
+  z-index:1;
+  width:42%;
+  height:390px;
+  object-fit:cover;
+  filter:grayscale(100%);
+  clip-path:polygon(20% 0,100% 0,100% 75%,50% 100%,0 45%);
 }
-.ceo-name{top:290px;left:22%}
-.director-name{top:485px;right:17%}
-.headline{
- position:absolute;z-index:3;left:5%;top:460px;width:43%;
+.ceo{top:0;left:38%}
+.director{
+  top:365px;
+  right:5%;
+  height:330px;
+  clip-path:polygon(50% 0,100% 55%,50% 100%,0 55%);
 }
-.headline h1{
- font-size:clamp(36px,4.2vw,61px);line-height:1.22;
- margin:0 0 22px;font-weight:900;letter-spacing:-1.5px;
+.tag{
+  position:absolute;
+  z-index:3;
+  background:linear-gradient(100deg,#bd5bff,#7900df);
+  color:white;
+  padding:13px 30px;
+  font-weight:bold;
+  font-size:23px;
+  transform:skew(-8deg);
 }
-.headline p{font-size:19px;line-height:1.6;color:#444;margin:0}
-.caption{
- position:absolute;left:5%;bottom:30px;color:#999;font-size:16px;
+.tag-ceo{top:235px;left:34%}
+.tag-director{top:480px;right:4%}
+.name{
+  position:absolute;
+  z-index:3;
+  font-weight:bold;
+  background:#fff;
+  padding:7px;
 }
-.page-number{position:absolute;right:5%;bottom:25px;font-size:32px;font-weight:bold}
-@media(max-width:600px){
- .page{min-height:850px}
- .brand{top:25px;left:6%;font-size:16px}
- .brand-mark{font-size:45px}
- .purple-corner{width:180px;height:300px;right:-80px;top:-100px}
- .ceo-photo{top:65px;left:33%;width:65%;height:260px}
- .ceo-ribbon{top:220px;left:6%;font-size:19px;padding:12px 25px}
- .ceo-name{top:267px;left:9%;font-size:16px}
- .headline{top:360px;left:6%;width:87%}
- .headline h1{font-size:37px;line-height:1.15}
- .headline p{font-size:15px;max-width:330px}
- .director-photo{top:575px;left:32%;width:64%;height:235px}
- .director-name{top:595px;right:12%;font-size:16px}
- .director-ribbon{top:700px;right:4%;font-size:17px;padding:11px 20px}
- .caption{font-size:11px;bottom:10px;left:6%}
- .page-number{font-size:23px;bottom:7px;right:5%}
+.name-ceo{top:290px;left:39%}
+.name-director{top:445px;right:14%}
+.footer{
+  background:#17131d;
+  color:white;
+  padding:25px 5%;
+  text-align:center;
+  line-height:1.7;
+}
+@media(max-width:650px){
+  .hero{padding:28px 6%;min-height:900px}
+  .logo{font-size:18px}
+  .purple-shape{width:150px;right:-80px}
+  .ceo{top:100px;left:32%;width:64%;height:280px}
+  .tag-ceo{top:265px;left:7%;font-size:18px}
+  .name-ceo{top:315px;left:10%}
+  .intro{margin-top:405px}
+  .intro h1{font-size:37px}
+  .intro p{font-size:16px}
+  .director{top:625px;right:4%;width:58%;height:220px}
+  .tag-director{top:720px;right:4%;font-size:17px}
+  .name-director{top:680px;right:22%}
+  .footer{font-size:13px}
 }
 </style>
 </head>
 <body>
-<main class="page">
- <div class="purple-corner"></div>
+<section class="hero">
+  <div class="purple-shape"></div>
 
- <div class="brand">
-  <span class="brand-mark">P</span>
-  <span>PT NYAWIT<br>BARENG</span>
- </div>
+  <div class="logo">
+    <span>●</span> PT NYAWIT BARENG
+  </div>
 
- <img class="photo ceo-photo" src="ceo.jpg" alt="CEO PT Nyawit Bareng">
+  <img class="person ceo" src="ceo.jpg"
+       alt="Foto CEO Ansori">
 
- <div class="ribbon ceo-ribbon">CEO</div>
- <div class="person-name ceo-name">Ansori</div>
+  <div class="tag tag-ceo">CEO</div>
+  <div class="name name-ceo">Ansori</div>
 
- <section class="headline">
-  <h1>Meet Our CEO<br>and Founder</h1>
-  <p>
-   Mengenal pemimpin PT Nyawit Bareng,
-   visi perusahaan, dan komitmen untuk
-   membangun masa depan bersama.
-  </p>
- </section>
+  <div class="intro">
+    <h1>Meet Our CEO<br>and Founder</h1>
+    <p>
+      Mengenal pemimpin PT Nyawit Bareng,
+      visi perusahaan, serta komitmen untuk
+      tumbuh dan berkembang bersama.
+    </p>
+  </div>
 
- <img class="photo director-photo" src="direktur.jpg" alt="Direktur PT Nyawit Bareng">
- <div class="director-badge">
-    Director
-</div>
+  <img class="person director" src="direktur.jpg"
+       alt="Foto Direktur Thomas Alex">
 
-<h3 class="director-name">Thomas Alexander</h3>
+  <div class="name name-director">Thomas Alex</div>
+  <div class="tag tag-director">DIRECTOR</div>
+</section>
 
- <div class="caption">PT Nyawit Bareng · Company Profile</div>
- <div class="page-number">01</div>
-</main>
+<footer class="footer">
+  <strong>PT NYAWIT BARENG</strong><br>
+  Bersama Bertumbuh, Bersama Membangun Masa Depan.
+</footer>
 </body>
 </html>
